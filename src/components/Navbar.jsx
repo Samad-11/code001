@@ -4,10 +4,6 @@ import logo from "../../public/logo.png";
 const Navbar = () => {
   const navItems = [
     {
-      actionTitle: "category",
-      linkTo: "/category",
-    },
-    {
       actionTitle: "about us",
       linkTo: "/about us",
     },

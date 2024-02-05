@@ -1,22 +1,26 @@
-import Image from "next/image";
-import sampleImage from "../../public/logo.png";
-const CategoryCard = ({ cardTitle, cardImage }) => {
+import React from 'react';
+import { Card, CardContent, CardDescription, CardTitle } from './ui/card';
+import Image from 'next/image';
+import sample from '../../public/sampleImage.jpg';
+
+const CategoryCard = () => {
   return (
-    <div className="border-4 border-green-500 w-1/5 h-[110%] flex-col items-center justify-center">
-      <div
-        id="card-img-wrapper"
-        className="border border-red-500 w-1/3 h-1/3 flex items-center justify-center"
-      >
-        <Image src={sampleImage} alt="sample image" />
-      </div>
-      <div id="card-details-wrapper">
-        <h1 className="font-bold text-2xl ">This is a sample card</h1>
-        <p>
-          This is the sample summary of this sample card and this is just a
-          example.
-        </p>
-      </div>
-    </div>
+    <>
+      <div className="flex items-center justify-center"></div>
+      <Card className="w-1/4 border border-black hover:shadow-lg bg-black">
+        <CardContent>
+          <Image src={sample} alt="" className="object-contain w-full " />
+        </CardContent>
+        {/* <CardTitle>Category</CardTitle> */}
+        {/* <CardDescription>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          adipisci nostrum quis soluta. Dignissimos harum iusto necessitatibus
+          suscipit quisquam ullam error enim libero voluptatibus ab eveniet vero
+          sapiente perferendis excepturi mollitia, molestias animi earum! Ad
+          consectetur cum fuga? Tenetur minima libero impedit architecto vero a.
+        </CardDescription> */}
+      </Card>
+    </>
   );
 };
 
