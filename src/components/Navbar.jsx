@@ -4,12 +4,16 @@ import logo from "../../public/logo.png";
 const Navbar = () => {
   const navItems = [
     {
+      actionTitle: "Home",
+      linkTo: "/",
+    },
+    {
       actionTitle: "about us",
-      linkTo: "/about us",
+      linkTo: "/about-us",
     },
     {
       actionTitle: "helping hand",
-      linkTo: "/helping-hands",
+      linkTo: "/helping-hand",
     },
     {
       actionTitle: "contact us",
@@ -17,11 +21,11 @@ const Navbar = () => {
     },
     {
       actionTitle: "on going campaign",
-      linkTo: "/campaign",
+      linkTo: "/on-going-campaign",
     },
     {
       actionTitle: "report injured animal",
-      linkTo: "/injured-report",
+      linkTo: "/report-injured-animal",
     },
   ];
   return (
